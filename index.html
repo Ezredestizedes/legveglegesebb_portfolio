@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kollár Ketrin</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;background-color: rgb(255, 204, 245);}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-purple w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Menü</a>
+  <div class="w3-container">
+   
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Rólam</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">11.évfolyam</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">12.évfolyam</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">13.évfolyam</a> 
+    
+ 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-purple w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <img src="logo.jpeg" style="width:20%" onclick="onClick(this)"  alt="elektronika" >
+ 
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Portfólió</b></h1>
+    <h1 class="w3-xxxlarge w3-text-purple"><b>Rólam-önreflexió</b></h1>
+    <hr style="width:50px;border:5px solid rgb(78, 18, 68)" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+        <p>-19 éves vagyok, és a Bánkiban tanulok, immáron 5. éve. </p>
+        <p>-Számos megpróbáltatáson vagyok túl az iskola által, mióta idejárok, hiszen 9. elején kiderült, hogy 2 évig gépészeti alapképzést kapunk, majd ágazati vizsgát kellett tennem, ami egyáltalán nem informatikai vizsga volt, így már az elején kedvemet szegte. </p>
+        <p>-Mikor végre megvolt a vizsga, 11.-ben szintén nem volt olyan óra, ami érdekelt volna, hiszen hiába érdekes az elektronika, nem amiatt jelentkeztem ide. </p>
+        <p>-12.-től szerencsére elkezdtünk olyan tantárgyakkal is foglalkozni, melyek számomra érdekesek, de mivel 3 év eltelt úgy, hogy nem azt tanultam, ami miatt jelentkeztem, így kevés kedvem maradt bármihez is, ami szakmai tárgy.</p>
+        <p>-Úgy gondolom, hogy többet fejlődhettem volna, ha másképpen osztják el az óráinkat, de mégis elégedett vagyok, hiszen így is minden egyes hétköznap beültem az iskolapadba, és próbáltam legalább közepesen teljesíteni.</p>
+        <p>-Több gyakorlat érdekesebbé tette volna a diákéveket, de sajnos csak a Hankookban volt lehetőségünk betekinteni, és sajnos eszközt sem biztosított eleget az iskola. </p>
+        
+     
+    </div>
+
+   
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>11.éfolyam</b></h1>
+    <h2 class="w3-xxlarge w3-text-pink"><b>Első félév</b></h2>
+    <h4 class="w3-xlarge w3-text-black"><b>Elektronika</b></h4>
+    <p>-alapképleteket tanultunk</p>
+    <p>-jegyzőkönyvet készítettünk papíron és digitálisan is</p>
+    <p>-hasznosnak gondolom, hiszen demonstrálta, hogy milyen rejtett logikai elemeket tartalmaznak az áramkörök, illetve veszélyeket</p>
+    <img src="e1.jpg" style="width:40%" onclick="onClick(this)" alt="elektronika">
+    <img src="e2.jpg" style="width:40%" onclick="onClick(this)" alt="elektronika">
+
+    
+    
+    
+    <h4 class="w3-xlarge w3-text-black"><b>Mikrovezérlők programozása</b></h4>
+    <p>-segített megéretni a szoftver és a hardver kapcsolatát</p>
+    <p>-fejlődtem a kód írásában és a hibák keresésében</p>
+    <p>-a Tinkercad hasznomra vált, mert nemcsak kódot írtam, hanem láttam is szimulálva, hogy hogyan állok</p>
+    <p>-a tolatóradaromat is abban a környezetben valósítottam meg</p>
+    <img src="mikrovez1.jpg" style="width:40%" onclick="onClick(this)" alt="mikrovezerlo">
+    <video width="640" height="360" controls>
+      <source src="major-video.mp4" type="video/mp4">
+    </video>
+
+    <h3 class="w3-xxlarge w3-text-pink"><b>Második félév</b></h3>
+    <h4 class="w3-xlarge w3-text-black"><b>Programozás alapjai</b></h4>
+    <p>-az órákon a Python programozási nyelvvel foglalkoztunk</p>
+    <p>-megtanultunk pl.: kő-papír-olló játékot programozni</p>
+    <p>-az órák során játékosan tanultam meg a nulláról az alapokat</p>
+    <img src="progalp.png" style="width:60%" onclick="onClick(this)" alt="programozas alapjai">
+    <img src="progfejl.PNG" style="width:65%" onclick="onClick(this)" alt="iot">
+
+
+    <h4 class="w3-xlarge w3-text-black"><b>Digitális áramkörök</b></h4>
+    <p>-jegyzőkönyvet készítettünk</p>
+    <p>-megtanultam a bináris számrendszerben való számolást</p>
+    <p>-megismerkedtem az alapvető logikai kapukkal: AND, OR, NOT, NAND, NOR</p>
+    <p>digitális áramkörök használata mindennapi eszközökben: számítógépek, telefonok, autók, háztartási gépek, stb.</p>
+
+    <img src="diga.png" style="width:60%" onclick="onClick(this)" alt="diga">
+    
+    
+  </div>
+  
+
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>12.évfolyam</b></h1>
+    <h2 class="w3-xxlarge w3-text-pink"><b>Első félév</b></h2>
+    <h4 class="w3-xlarge w3-text-black"><b>Adatbáziskezelés alapjai</b></h4>
+    <p>relációs modell: Az adatokat táblázatok (relációk) formájában tároljuk, ahol a sorok (rekordok) és oszlopok (mezők) reprezentálják az adatokat</p>
+    <p>megtanultam az plapvető műveleteket: SELECT, INSERT, UPDATE, DELETE</p>
+    <p>foglalkoztam a JOIN műveletekkel: Az adatbázisokban több táblát kapcsolhatunk össze (INNER JOIN, LEFT JOIN, RIGHT JOIN)</p>
+    <p>rájöttem,hogy az adatbázisok alkalmazása fontos: Nagy adatmennyiség kezelésére, gyors keresésre, rugalmas struktúrájú adatok tárolására</p>
+    <p>a Hankookban nyárigyakorlat során tapasztaltam, hogy egy jó adatbázis mennyire megkönnyíti a munkafolyamatokat</p>
+    <img src="adatb1.png" style="width:60%" onclick="onClick(this)" alt="adatb">
+    <img src="adatb2.png" style="width:60%" onclick="onClick(this)" alt="adatb">
+    <img src="adatb4.png" style="width:60%" onclick="onClick(this)" alt="adatb">
+
+    <h4 class="w3-xlarge w3-text-black"><b>Hálózatkezelés</b></h4>
+    <p>-az órákon sok elméletet tanultunk, hogy eljussunk addig, hogy Cisco Packter Tracerben dolgozzunk</p>
+    <p>-hálózati típusokkal foglalkoztam: Lokális hálózatok (LAN), széles körű hálózatok (WAN), városi hálózatok (MAN), személyi hálózatok (PAN)</p>
+    <p>-megtanultam az IP címzést és az Alhálózati maszkok osztását</p>
+    <p>-a tantárgy segített abban, hogy lássam mennyire fontosak a hálózatok, főleg a jövő szempontjából</p>
+    <img src="halo.png" style="width:40%" onclick="onClick(this)" alt="halozat">
+    <img src="halo2.png" style="width:60%" onclick="onClick(this)" alt="halozat">
+    
+    <h3 class="w3-xxlarge w3-text-pink"><b>Második félév</b></h3>
+    <h4 class="w3-xlarge w3-text-black"><b>PLC programozás</b></h4>
+    <p>-megértettem a programozás logikai alapjait.A PLC programozás során sikerült átlátnom a logikai műveletek fontosságát és azok helyes alkalmazását az automatizálásban</p>
+    <p>-gyakoroltam az időzítő és számláló blokkok használatát</p>
+    <p>-a gyakorlati tapasztalatok segítettek a fejlődésben,de sajnos kevés alkalmam nyílt rá, hiszen nem volt hozzá eszköz</p>
+    <p>-munkásságom során egy autós riasztórendszert programoztam be</p>
+    <img src="plc1.PNG" style="width:60%" onclick="onClick(this)" alt="plc">
+    <img src="plc2.PNG" style="width:60%" onclick="onClick(this)" alt="plc">
+    <img src="plc4.PNG" style="width:60%" onclick="onClick(this)" alt="plc">
+    <img src="plc3.PNG" style="width:60%" onclick="onClick(this)" alt="plc">
+    <img src="plc5.PNG" style="width:60%" onclick="onClick(this)" alt="plc">
+    <img src="plcszereles.jpg" style="width:30%" onclick="onClick(this)" alt="plc">
+    <img src="plcszereles2.PNG" style="width:30%" onclick="onClick(this)" alt="plc">
+    <video width="640" height="360" controls>
+      <source src="plc-video.mp4" type="video/mp4">
+    </video>
+
+
+
+
+    <h4 class="w3-xlarge w3-text-black"><b>Számítógépes szimuláció</b></h4>
+    <p>-az órákon leginkább EasyEdában dolgoztam</p>
+    <p>-nagyban alapozott az elektronikai tudásra</p>
+    <p>-egy tapskapcsolót valósítottunk meg</p>
+    <p>-a számítógépes szimuláció olyan folyamat, amely egy valós rendszer működését modellezi számítógép segítségével, lehetővé téve annak vizsgálatát és elemzését anélkül, hogy közvetlenül beavatkoznánk a valós rendszerbe</p>
+    <img src="szimulacio.PNG" style="width:60%" onclick="onClick(this)" alt="Szimulacio">
+  </div>
+
+  
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-purple"><b>13.évfolyam</b></h1>
+    <h2 class="w3-xxlarge w3-text-pink"><b>Első félév</b></h2>
+  
+    <h4 class="w3-xlarge w3-text-black"><b>Munkavállalói idegennyelven</b></h4>
+    <p>-az órák nagyrészében kitértünk arra, hogyan kell jól önéletrajzot írni, majd megvalósítottuk angolul is</p>
+    <p>-több új szavat és kifejezést is tanultunk a munkavilágával kapcsolatban</p>
+    <p>-számos fiktív munkahelyi esetről és megoldásáról beszéltünk és olbvastunk</p>
+    <img src="muiny2.PNG" style="width:60%" onclick="onClick(this)" alt="muiny">
+
+
+
+
+
+    <h4 class="w3-xlarge w3-text-black"><b>IoT</b></h4>
+    <p>-eszközöket kötöttünk össze hálózaton (Wi-Fi-n)</p>
+    <p>-lehetőségünk nyílt csapatban is dolgozni, ami nagyban segítette a fejlődést</p>
+    <p>-segített jobban megérteni az okoseszközök működését</p>
+    <p>-rámutatott arra, hogy mennyire jelentős a jövőben, pl az infrastuktúrában</p>
+    <p>-kreatív megoldásokat alkalmaztunk</p>
+    <img src="iot1.jpg" style="width:15%" onclick="onClick(this)" alt="iot">
+    <img src="iot2.jpg" style="width:25%" onclick="onClick(this)" alt="iot">
+    
+
+
+
+    <h3 class="w3-xxlarge w3-text-pink"><b>Második félév</b></h3>
+
+    <h4 class="w3-xlarge w3-text-black"><b>Programfejlesztés</b></h4>
+    <p>-az órákon visual studioban dolgoztunk</p>
+    <p>-átvettük az alapfogalmakat, majd atrra építkeztünk</p>
+    <p>-a projektemben az adatbázis feladatomra alapoztam, és annak a fiktív cégnek az adatait vittem át, ahhoz igazítottam a formot is, illetve a lekérdezéseket is</p>
+    <p>-az órákon fejlődtem a kódolásban</p>
+    <img src="pf.png" style="width:50%" onclick="onClick(this)" alt="pf">
+    <img src="pf2.png" style="width:50%" onclick="onClick(this)" alt="pf">
+    <img src="pf3.png" style="width:50%" onclick="onClick(this)" alt="pf">
+
+    <h4 class="w3-xlarge w3-text-black"><b>Robottechnika CAD/CAM</b></h4>
+    <p>-az órákon Falstadban dolgoztunk leginkább</p>
+    <p>-tettünk egy kirándulást Dunaújvárosban</p>
+    <p>-a képen egy step-down kapcsolót láthatunk szimulálva</p>
+    <img src="stepdown.PNG" style="width:60%" onclick="onClick(this)" alt="robottechnika">
+
+
+  </div>
+
+  
+  
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="kollár ketrin" title="W3.CSS" target="_blank" class="w3-hover-opacity">kk</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
